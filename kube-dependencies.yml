@@ -17,7 +17,12 @@
        name: apt-transport-https
        state: present
 
-   - name: install curl
+   - name: install gnupg
+     apt:
+       name: gnupg
+       state: present
+
+   - name: Install curl
      apt:
        name: curl
        state: present
